@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 8
+   Case Problem 1
+
+   Rhetoric in the United States Styles for Media
+   Author: Justin Aybar
+   Date: 1.29.19  
+
+   Filename: ws_media.css
+
+*/
+
+/* VideoPlayer Styles */
+/* This sets the video element with a display of block, a width of 90 percent, and a margin of top/bottom of 5 pixels and left/right to auto */
+video {
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+}
+
+/* This create the media query of the video element with a width of 360 pixels, a float to the right, and a margin of 10 pixels */
+@media only screen and (min-width: 521px) {
+    video {
+        width: 360px;
+        float: right;
+        margin: 10px;
+    }
+}
+
+/* Track Styles */
+/* This creates the pseudo class of cue with a font of 1.3 em and sans serif, the color to red blue green 221, 128, 160, and a background color of red blue green alpha to 255, 255, 255, 0.8 */
+::cue {
+    font: 1.3em sans-serif;
+    color: rgb(221, 128, 160);
+    background-color: rgba(255, 255, 255, 0.8);
+}
